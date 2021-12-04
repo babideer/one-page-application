@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-pager</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center w-100">
+                <button class="btn btn-light mx-2" id="btntoDo">To-do list</button>
+                <button class="btn btn-dark mx-2" id="btnquiz">Movie Quiz</button>
+            </div>
+        </div>
+      </nav>
+
+    <!--Ninja quiz-->
+        <div id="quizpage" class="d-none">
+            <!-- top section -->
+            <div class="intro py-3 bg-white text-center">
+                <div class="container">
+                <h2 class="text-danger display-3 my-4">Movie quiz</h2>
+                </div>
+            </div>
+
+            <!-- result section -->
+            <div class="result py-4 d-none bg-light text-center">
+                <div class="container lead">
+                <p>You answered <span class="text-danger display-4 p-3">0%</span> correctly</p>
+                </div>
+            </div>
+
+            <!-- quiz section -->
+            <div class="quiz py-4 bg-danger">
+                <div class="container">
+                <h2 class="my-5 text-white">On with the questions...</h2>
+
+                <form class="quiz-form text-light">
+                    <div class="my-5">
+                    <p class="lead font-weight-normal">1. How many origin Alien movies have been released?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">3 movies</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">4 movies</label>
+                    </div>
+                    </div>
+                    <div class="my-5">
+                    <p class="lead font-weight-normal">2. Which colour is a Seth´s lightsaber?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">Blue</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">Red</label>
+                    </div>
+                    </div>
+                    <div class="my-5">
+                    <p class="lead font-weight-normal">3. Which colour does Freddy Krueger's sweater have?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">Dark blue and red</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">Dark green and red</label>
+                    </div>
+                    </div>
+                    <div class="my-5">
+                    <p class="lead font-weight-normal">4. Which kind of mask does Jason have on?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">Fencing mask</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">Hockey mask</label>
+                    </div>
+                    </div>
+                    <div class="text-center">
+                    <input type="submit" class="btn btn-light"> 
+                    </div>
+                </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    <!--To-do list-->
+        <div id="toDopage">
+            <div class="container">
+
+                <header class="text-center text-light my-4">
+                  <h1 class="mb-4">Todo List</h1>
+                  <form class="search">
+                    <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
+                  </form>
+                </header>
+            
+                <ul class="list-group todos mx-auto text-light">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>play mariokart</span>
+                    <i class="far fa-trash-alt delete">Delete</i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>defeat ganon in zelda</span>
+                    <i class="far fa-trash-alt delete">Delete</i>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>make a veggie pie</span>
+                    <i class="far fa-trash-alt delete">Delete</i>
+                  </li>
+                </ul>
+            
+                <form class="add text-center my-4">
+                  <label class="text-light">Add a new todo...</label>
+                  <input class="form-control m-auto" type="text" name="add" />
+                </form>
+              </div>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
